@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+     <head>
+      <meta charset='utf-8'>
+      <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+      <script src="/top.js"></script>
+      <script src="/jnc.js"></script>
+      <style>
+		 body{
+			margin: 0px;
+			background-color: rgba(102,204,255,0.35);
+			//background-color: #E6E6E6;
+		 }
+		 header{
+			padding-top: 10px;
+			padding-bottom: 10px;
+			width: 100%;
+		 }
+		 .main-container{
+		         margin-top: 30px;
+		         width: 100%;
+               		 height: 100%;
+            	 }
+		 .title{
+			//color: #0091AD;
+			font-size: 60px;
+			margin-top: 10px;
+			float: left;
+		 }
+		 .chapter{
+			height: 16.6%;
+			width: 100%;
+			float: none;
+		 }
+		 .split-line{
+			height: 1px;
+			width: 100%;
+		        background-image: linear-gradient(to right, rgba(102,204,255,0.35), rgba(210,110,15,1), rgba(102,204,255,0.35));
+		 }
+		 .chapter-title1,.chapter-title2,.chapter-title3{
+			color: #0091AD;
+		 }
+		 .chapter-title{
+			width: 100%;
+			height: 10%;
+		 }
+		 .chapter-title1{
+			font-size: 20px;
+			padding-left: 44%;
+		 }
+		 .chapter-title2{
+			font-size: 18px;
+			padding-left: 45.5%;
+			font-weight: bold;
+		 }
+		 .chapter-title3{
+                        font-size: 23px;
+                        padding-left: 44%;
+			padding-bottom: 5px;
+                        
+                 }
+		 .space{
+			width: 100%;
+			height: 5px;
+		 }
+		.chapter-image{
+			height: 200px;
+			width: 200px;
+		}
+		.chapter-body{
+			width: 100%;
+		}
+		.chapter-first-text{
+			height: 75px;
+			width: 75px;
+			border: 1px solid #82C0CC;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin-left: 45%;
+			margin-top: 20px;
+			transform: rotate(-45deg);
+			font-size: 20px;
+			background: #91A6FF;
+		}
+		.chapter-first-image{
+			margin-top: 40px;
+		}
+		.photos-container{
+		}
+		.photo{
+			border: 2px solid yellow;
+		}
+		.top{
+                	position: fixed;
+             		right: 8;
+                	bottom: 7;
+                	background-image: url('top.jpg');
+                	height: 55px;
+                	width: 55px;
+                	border-radius: 27px;
+                	-box-shadow: 2px 2px 2px #888888;
+                	-webkit-transition-duration: 0.8s;
+                	outline: none;
+          	}
+                .top:hover{
+               		 background-image: url('jt2.jpg');
+          	 }
+		.chapter-title4{
+			color: gray;
+			font-weight: bold;
+			transform: rotate(45deg);
+		}
+		.buttton{
+			text-decoration:underline;
+			cursor: pointer;
+		}
+		footer{
+			background-color: gray;
+			width: 100%;
+			height: 20%;
+		}	
+		header{
+			margin-top: 3%;
+		}	
+		p{
+			margin-top: 0px;
+			margin-bottom: 0px;
+			padding: 0px;
+			font-size: 17px;
+		}
+		.title-div{
+			margin-left: 35%;
+		}
+		.p-1{
+			font-size: 23px;
+			margin-left: 45%;
+			margin-top: 15px;
+			color: orange;
+		}
+		.p-2{ 
+			font-size: 18px;
+			margin-left: 15%;
+			margin-top: 15px;
+			color: gray;
+		}
+		.p-3{
+			font-size: 18px;
+                        margin-left: 15%;
+                        margin-top: 5px;
+                        color: gray;
+		}
+	 </style>
+     </head>
+     <body>
+		 <header>
+			<div style="width: 100%;height: 5%"></div>
+	  		<div class="title-div">
+				<img src="/title.jpg"></img>
+			</div>
+                 </header>
+	         <div style="width: 100%;margin-top: 2%"></div>
+		 <audio class="bgm" src="/bgm2.mp3" loop></audio>
+	 	 <div class="main-container">
+			<div class="first-word">
+				<div class="split-line"></div>
+				<div class="space"></div>
+				<span class="chapter-title2" style="margin-left: 1%">卷首语</div>
+				<div class="space"></div>
+				<div class="split-line"></div>
+				<!--<p style="margin-left: 15%;">&nbsp&nbsp&nbsp&nbsp时光似箭，日月如梭，转眼间，我们已经从一年级的“小豆包”，长成了六年级的大孩子了。在这六年的小学生活里，</p>
+				<p style="margin-left: 15%">发生了许多令我们难忘的事情。下面，就让我们打开时间的宝库，看看这六年里的事吧……</p>-->
+				<p style="margin-left: 15%;margin-top: 10px;color: gray;">&nbsp&nbsp&nbsp&nbsp时光如水,眼间,短暂而丰富多彩的小学生活已在身边悄然流逝.在即将毕业离校之计,我心中充满了对母校的不舍以及对学校领导和</p>
+				<p style="margin-left: 12.5%;margin-top: 5px;color: gray;">老师们的感激之情。相逢也只是偶然，相逢即刻将又分手</p>
+			</div>
+			<div style="width: 100%;margin-top: 3%;"></div>
+			<div class="chapter">
+                                <div class="chapter-title">
+                                        <div class="split-line"></div>
+                                        <div class="space"></div>
+                                        <span class="chapter-title1">Chapter 1</span><br>
+                                        <div class="space"></div>
+                                        <span class="chapter-title2">一年级</span><br>
+                                        <div class="space"></div>
+                                        <div class="split-line"></div>
+                                        <div class="space"></div>
+                                        <span class="chapter-title3">我上学了！</span>
+                                        <div class="space"></div>
+                                        <div class="split-line"></div>
+                                </div>
+				<div style="width: 100%;height: 105%;"></div>
+                    		<div class="chapter-body">
+					<div class="chapter-first-text">
+                                                <sapn class="chapter-title4">全家福<span>
+                                        </div>
+					<img src="img_3666.jpg" class="chapter-first-image" style="width: 40%;margin-left: 28%;"></img>
+					<div class="space" style="height: 15px"></div>
+                                        <div class="split-line"></div>
+                                        <div class="space" style="height: 15px"></div>
+                                        <div class="chapter-first-text">
+                                                <sapn class="chapter-title4">相册<span>
+                                        </div>
+                                        <div class="space" style="height: 100px"></div>
+                                        <div class="photos-container">
+                                                <img src="rudui.jpg" class="photo" style="height: 300px;width: 400px;margin-left: 20%;float: left; transform: rotate(-9deg);border-color: red;"></img>
+                                      		<img src="/rudui2.JPG" class="photo" style="width: 300px;height: 400px;margin-left: 5%;float: left;transform: rotate(6deg);border-color: red"></img>
+					</div>
+                                        <div class="space" style="height: 380%"></div>
+                                        <div class="split-line" style="margin-top: 33%;"></div>
+                                        <div class="space" style="height: 115%"></div>
+					<div class="text-1">
+						<p class="p-1">一年级</p>
+						<p class="p-2">&nbsp&nbsp&nbsp&nbsp带着满腹的疑问，我们踏进了万达第一实验小学校的大门。什么是小学？什么是少先队？这些疑问的答案就</p>
+						<p class="p-3">让接下来的六年来揭晓吧……</p>
+					</div>
+				</div>
+                        </div>
+			<div style="width: 100%;height: 100px;"></div>
+			<div class="chapter">
+
+                                <div class="chapter-title">
+                                        <div class="split-line"></div>
+                                        <div class="space"></div>
+                                        <span class="chapter-title1">Chapter 2</span><br>
+                                        <div class="space"></div>
+                                        <span class="chapter-title2">二年级</span><br>
+                                        <div class="space"></div>
+                                        <div class="split-line"></div>
+                                        <div class="space"></div>
+                                        <span class="chapter-title3">我进步了！</span>
+					<div class="space"></div>
+					<div class="split-line"></div>
+                                </div>
+				<div style="width: 100%;height: 100%;"></div>
+				<div class="chapter-body">
+					<div class="chapter-first-text">
+						<sapn class="chapter-title4">全家福<span>
+					</div>
+					<img src="2_lianhuanhui.jpg" class="chapter-first-image" style="width: 40%;margin-left: 28%;"></img>
+					<div class="space" style="height: 15px"></div>
+					<div class="split-line"></div>
+					<div class="space" style="height: 15px"></div>
+					<div class="chapter-first-text">
+                                                <sapn class="chapter-title4">相册<span>
+                                        </div>
+	             		        <div class="space" style="height: 100px"></div>
+					<div class="photos-container">
+						<img src="img_3667.jpg" class="photo" style="height: 300px;width: 400px;margin-left: 20%;float: left; transform: rotate(-3deg);border-color: orange"></img>
+						<img src="shehuishijian2.jpg" class="photo" style="height: 250px;width: 350px;margin-left: 100px;margin-bottom: 5%;transform: rotate(15deg);float: left;border-color: orange;"></img>
+						<!--<img src="img_3670.jpg" class="photo" style="height: 200px;width: 300px;margin-left: 50px;margin-top: 75px;transform: rotate(2deg)"></img>-->
+					</div>
+					<div class="space" style="height: 300%"></div>
+					<div class="split-line" style="margin-top: 30%;"></div>
+					<div class="space" style="height: 115%"></div>
+					<div class="text-1">
+						<p class="p-1">二年级</p>
+						<p class="p-2">&nbsp&nbsp&nbsp&nbsp"加油！加油!"在高亢的加油打气声中，我们的第二次运动会拉开了序幕，班级的所有运动员都势如破竹般向着</p>
+						<p class="p-3">第一名冲去。虽然我们没有进入前三，但在这次运动会中，我们获得了更强壮的身体；学会了团结协作。我们将</p>
+						<p class="p-3">会重整旗鼓，在下一次运动会向着胜利冲，冲，冲！</p>
+					</div>
+				</div>
+                        </div>
+			  <div style="width: 100%;height: 200%;margin-top: 10%;"></div>
+			 <div class="chapter">
+                                <div class="chapter-title">
+                                        <div class="split-line"></div>
+                                        <div class="space"></div>
+                                        <span class="chapter-title1">Chapter 3</span><br>
+                                        <div class="space"></div>
+                                        <span class="chapter-title2">三年级</span><br>
+                                        <div class="space"></div>
+                                        <div class="split-line"></div>
+                                        <div class="space"></div>
+                                        <span class="chapter-title3">我长大了！</span>
+                                        <div class="space"></div>
+                                        <div class="split-line"></div>
+                                </div>
+                                <div style="width: 100%;height: 100%;"></div>
+                                <div class="chapter-body">
+                                        <div class="chapter-first-text">
+                                                <sapn class="chapter-title4">全家福<span>
+                                        </div>
+                                        <img src="img_3666.jpg" class="chapter-first-image" style="width: 40%;margin-left: 28%;"></img>
+                                        <div class="space" style="height: 15px"></div>
+                                        <div class="split-line"></div>
+                                        <div class="space" style="height: 15px"></div>
+                                        <div class="chapter-first-text">
+                                                <sapn class="chapter-title4">相册<span>
+                                        </div>
+                                        <div class="space" style="height: 100px"></div>
+                                        <div class="photos-container">
+						<img src="3_longtanshan.jpg" class="photo" style="height: 250px;width: 350px;margin-left: 20%;margin-top: 2.5%;transform: rotate(-7deg);float: left;"></img>
+                                                <img src="shushi.jpg" class="photo" style="height: 300px;width: 400px;margin-left: 7.5%;float: left; transform: rotate(4deg)"></img>
+                                                <!--<img src="img_3670.jpg" class="photo" style="height: 200px;width: 300px;margin-left: 50px;margin-top: 75px;transform: rotate(2deg)"></img>-->
+                                        </div>
+                                        <div class="space" style="height: 150%"></div>
+                                        <div class="split-line" style="margin-top: 30%;"></div>
+                                        <div class="space" style="height: 115%"></div>
+					<div class="text-1">
+						<p class="p-1">三年级</p>
+						<p class="p-2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp随着校长手中的锣一声响，校园书市活动正式开始！这次的校园书市可与以前不同，今天，我们将充当卖家的角色。</p>
+						<p class="p-3">这次的校园书市活动不仅让我们赚到了人生第一桶金，还让更多人拥有了自己喜欢的书，并且培养了我们的商业头脑。我</p>
+						<p class="p-3">是多么希望能再举行一场这样的活动啊！</p>
+					</div>
+                                </div>
+                        </div>
+			<div style="width: 100%;height: 250%;margin-top: 7.5%"></div>
+                        <div class="chapter">
+                                <div class="chapter-title">
+                                        <div class="split-line"></div>
+                                        <div class="space"></div>
+                                        <span class="chapter-title1">Chapter 4</span><br>
+                                        <div class="space"></div>
+                                        <span class="chapter-title2">四年级</span><br>
+                                        <div class="space"></div>
+                                        <div class="split-line"></div>
+                                        <div class="space"></div>
+                                        <span class="chapter-title3">我学会了！</span>
+                                        <div class="space"></div>
+                                        <div class="split-line"></div>
+                                </div>
+                                <div style="width: 100%;height: 100%;"></div>
+                                <div class="chapter-body">
+                                        <div class="chapter-first-text">
+                                                <sapn class="chapter-title4">全家福<span>
+                                        </div>
+                                        <img src="4_lianhuanhui.jpg" class="chapter-first-image" style="width: 40%;margin-left: 28%;"></img>
+                                        <div class="space" style="height: 15px"></div>
+                                        <div class="split-line"></div>
+                                        <div class="space" style="height: 15px"></div>
+                                        <div class="chapter-first-text">
+                                                <sapn class="chapter-title4">相册<span>
+                                        </div>
+                                        <div class="space" style="height: 100px"></div>
+                                        <div class="photos-container">
+                                                <img src="4_yundonghui.jpg" class="photo" style="height: 300px;width: 400px;margin-left: 35%;float: left; transform: rotate(0deg);border-color: green"></img>
+                                                <!--<img src="img_3668.jpg" class="photo" style="height: 250px;width: 350px;margin-left: 100px;margin-top: 115px;transform: rotate(15deg);float: left;"></img>
+                                                <img src="img_3670.jpg" class="photo" style="height: 200px;width: 300px;margin-left: 50px;margin-top: 75px;transform: rotate(2deg)"></img>-->
+                                        </div>
+                                        <div class="space" style="height: 150%"></div>
+                                        <div class="split-line" style="margin-top: 30%;"></div>
+                                        <div class="space" style="height: 115%"></div>
+					<div class="text-1">
+						<p class="p-1">四年级</p>
+					</div>
+                                </div>
+                        </div>
+			<div style="width: 100%;height: 250%;margin-top: 10%;"></div>
+                        <div class="chapter">
+                                <div class="chapter-title">
+                                        <div class="split-line"></div>
+                                        <div class="space"></div>
+                                        <span class="chapter-title1">Chapter 5</span><br>
+                                        <div class="space"></div>
+                                        <span class="chapter-title2">五年级</span><br>
+                                        <div class="space"></div>
+                                        <div class="split-line"></div>
+                                        <div class="space"></div>
+                                        <span class="chapter-title3">我做到了！</span>
+                                        <div class="space"></div>
+                                        <div class="split-line"></div>
+                                </div>
+                                <div style="width: 100%;height: 100%;"></div>
+                                <div class="chapter-body">
+                                        <div class="chapter-first-text">
+                                                <sapn class="chapter-title4">全家福<span>
+                                        </div>
+                                        <img src="5_jitizhao.jpg" class="chapter-first-image" style="width: 40%;margin-left: 28%;"></img>
+                                        <div class="space" style="height: 15px"></div>
+                                        <div class="split-line"></div>
+                                        <div class="space" style="height: 15px"></div>
+                                        <div class="chapter-first-text">
+                                                <sapn class="chapter-title4">相册<span>
+                                        </div>
+                                        <div class="space" style="height: 100px"></div>
+                                        <div class="photos-container">
+                                                <img src="bisai.jpg" class="photo" style="height: 300px;width: 400px;margin-left: 5%;float: left; transform: rotate(-9deg)"></img>
+                                                <img src="img_3670.jpg" class="photo" style="height: 250px;width: 350px;margin-left: 100px;margin-top: 2%;transform: rotate(15deg);float: left;"></img>
+                                                <img src="junxun1.jpg" class="photo" style="height: 200px;width: 300px;margin-left: 50px;margin-top: 50px;transform: rotate(-8.5deg)"></img>
+                                        	<img src="zhangang.jpg" class="photo" style="height: 400px;width: 300px;margin-left: 50px;margin-top: 130px;margin-right: 20%;transform: rotate(0deg)"></img>
+					</div>
+                                        <div class="space" style="height: 150%"></div>
+                                        <div class="split-line" style="margin-top: 10%;"></div>
+                                        <div class="space" style="height: 115%"></div>
+                                </div>
+                        </div>
+			<div style="width: 100%;height: 250%;"></div>
+                        <div class="chapter">
+                                <div class="chapter-title">
+                                        <div class="split-line"></div>
+                                        <div class="space"></div>
+                                        <span class="chapter-title1">Chapter 6</span><br>
+                                        <div class="space"></div>
+                                        <span class="chapter-title2">六年级</span><br>
+                                        <div class="space"></div>
+                                        <div class="split-line"></div>
+                                        <div class="space"></div>
+                                        <span class="chapter-title3">我毕业了！</span>
+                                        <div class="space"></div>
+                                        <div class="split-line"></div>
+                                </div>
+                                <div style="width: 100%;height: 100%;"></div>
+                                <div class="chapter-body">
+                                        <div class="chapter-first-text">
+                                                <sapn class="chapter-title4">全家福<span>
+                                        </div>
+                                        <img src="img_3666.jpg" class="chapter-first-image" style="width: 40%;margin-left: 28%;"></img>
+                                        <div class="space" style="height: 15px"></div>
+                                        <div class="split-line"></div>
+                                        <div class="space" style="height: 15px"></div>
+                                        <div class="chapter-first-text">
+                                                <sapn class="chapter-title4">相册<span>
+                                        </div>
+                                        <div class="space" style="height: 100px"></div>
+                                        <div class="photos-container">
+                                                <img src="img_3667.jpg" class="photo" style="height: 300px;width: 400px;margin-left: 5%;float: left; transform: rotate(-9deg)"></img>
+                                                <img src="img_3668.jpg" class="photo" style="height: 250px;width: 350px;margin-left: 100px;margin-top: 115px;transform: rotate(15deg);float: left;"></img>
+                                                <img src="img_3670.jpg" class="photo" style="height: 200px;width: 300px;margin-left: 50px;margin-top: 75px;transform: rotate(2deg)"></img>
+                                        </div>
+                                        <div class="space" style="height: 150%"></div>
+                                        <div class="split-line" style="margin-top: 10%;"></div>
+                                        <div class="space" style="height: 115%"></div>
+                                </div>
+                        </div>
+			<div class="end">
+				<p></p><br>
+				<p></p><br>
+				<p></p><br>
+				<p></p><br>	
+				<p></p><br>
+				<p></p><br>
+			</div>			
+
+			<button class="top" onclick="javascript:toTop()" style="display: none;">
+	                </button>
+			<div style="width: 100%;height: 400%;"></div>
+
+         	 </div>
+	         <footer>
+	 			<span class="button stop-bgm">关闭音乐</span>
+				<span class="button play-bgm">手动播放</span>
+		 </footer>
+     </body>
+</html>	
