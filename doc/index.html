@@ -1,158 +1,11 @@
 <!DOCTYPE html>
 <html>
      <head>
-      <meta charset='utf-8' />
+      <meta charset='utf-8'>
       <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
       <script src="/lsk/doc/top.js"></script>
-      <script src="/lsk/doc/jnc.js"></script>
-      <style>
-		 body{
-			margin: 0px;
-			background-color: rgba(102,204,255,0.35);
-			//background-color: #E6E6E6;
-			 width: 1920px;
-		 }
-		 header{
-			padding-top: 10px;
-			padding-bottom: 10px;
-			width: 100%;
-		 }
-		 .main-container{
-		         margin-top: 30px;
-		         width: 100%;
-               		 height: 100%;
-            	 }
-		 .title{
-			//color: #0091AD;
-			font-size: 60px;
-			margin-top: 10px;
-			float: left;
-		 }
-		 .chapter{
-			height: 16.6%;
-			width: 100%;
-			float: none;
-		 }
-		 .split-line{
-			height: 1px;
-			width: 100%;
-		        background-image: linear-gradient(to right, rgba(102,204,255,0.35), rgba(210,110,15,1), rgba(102,204,255,0.35));
-		 }
-		 .chapter-title1,.chapter-title2,.chapter-title3{
-			color: #0091AD;
-		 }
-		 .chapter-title{
-			width: 100%;
-			height: 10%;
-		 }
-		 .chapter-title1{
-			font-size: 20px;
-			padding-left: 44%;
-		 }
-		 .chapter-title2{
-			font-size: 18px;
-			padding-left: 45.5%;
-			font-weight: bold;
-		 }
-		 .chapter-title3{
-                        font-size: 23px;
-                        padding-left: 44%;
-			padding-bottom: 5px;
-                        
-                 }
-		 .space{
-			width: 100%;
-			height: 5px;
-		 }
-		.chapter-image{
-			height: 200px;
-			width: 200px;
-		}
-		.chapter-body{
-			width: 100%;
-		}
-		.chapter-first-text{
-			height: 75px;
-			width: 75px;
-			border: 1px solid #82C0CC;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			margin-left: 45%;
-			margin-top: 20px;
-			transform: rotate(-45deg);
-			font-size: 20px;
-			background: #91A6FF;
-		}
-		.chapter-first-image{
-			margin-top: 40px;
-		}
-		.photos-container{
-		}
-		.photo{
-			border: 2px solid yellow;
-		}
-		.top{
-                	position: fixed;
-             		right: 8;
-                	bottom: 7;
-                	background-image: url('top.jpg');
-                	height: 55px;
-                	width: 55px;
-                	border-radius: 27px;
-                	-box-shadow: 2px 2px 2px #888888;
-                	-webkit-transition-duration: 0.8s;
-                	outline: none;
-          	}
-                .top:hover{
-               		 background-image: url('jt2.jpg');
-          	 }
-		.chapter-title4{
-			color: gray;
-			font-weight: bold;
-			transform: rotate(45deg);
-		}
-		.buttton{
-			text-decoration:underline;
-			cursor: pointer;
-		}
-		footer{
-			background-color: gray;
-			width: 100%;
-			height: 20%;
-		}	
-		header{
-			margin-top: 3%;
-		}	
-		p{
-			margin-top: 0px;
-			margin-bottom: 0px;
-			padding: 0px;
-			font-size: 17px;
-		}
-		.title-div{
-			margin-left: 35%;
-		}
-		.p-1{
-			font-size: 23px;
-			margin-left: 45%;
-			margin-top: 15px;
-			color: orange;
-		}
-		.p-2{ 
-			font-size: 18px;
-			margin-left: 15%;
-			margin-top: 15px;
-			color: gray;
-		}
-		.p-3{
-			font-size: 18px;
-                        margin-left: 15%;
-                        margin-top: 5px;
-                        color: gray;
-		}
-	 </style>
+      <script src="/lsk/doc/index.js"></script>
+      <link rel="stylesheet" type="text/css" href="/lsk/doc/style.css">           
      </head>
      <body>
 		 <header>
@@ -168,7 +21,7 @@
 				<div class="split-line"></div>
 				<div class="space"></div>
 				<span class="chapter-title2" style="margin-left: 1%">卷首语</div>
-				<div class="space"></div>
+				<dCiv class="space"></div>
 				<div class="split-line"></div>
 				<!--<p style="margin-left: 15%;">&nbsp&nbsp&nbsp&nbsp时光似箭，日月如梭，转眼间，我们已经从一年级的“小豆包”，长成了六年级的大孩子了。在这六年的小学生活里，</p>
 				<p style="margin-left: 15%">发生了许多令我们难忘的事情。下面，就让我们打开时间的宝库，看看这六年里的事吧……</p>-->
@@ -335,19 +188,20 @@
                                         </div>
                                         <div class="space" style="height: 100px"></div>
                                         <div class="photos-container">
-                                                <img src="/lsk/doc/4_yundonghui.jpg" class="photo" style="height: 300px;width: 400px;margin-left: 35%;float: left; transform: rotate(0deg);border-color: green"></img>
-                                                <!--<img src="img_3668.jpg" class="photo" style="height: 250px;width: 350px;margin-left: 100px;margin-top: 115px;transform: rotate(15deg);float: left;"></img>
-                                                <img src="img_3670.jpg" class="photo" style="height: 200px;width: 300px;margin-left: 50px;margin-top: 75px;transform: rotate(2deg)"></img>-->
+                                                <img src="/lsk/doc/4_yundonghui.jpg" class="photo" style="height: 300px;width: 400px;margin-left: 15%;float: left; transform: rotate(-3deg);border-color: green"></img>
+                                                <img src="/lsk/doc/jita.jpg" class="photo" style="height: 400px;width: 300px;margin-left: 100px;margin-top: 4px;transform: rotate(5deg);float: left;"></img>
+                                                <!--<img src="img_3670.jpg" class="photo" style="height: 200px;width: 300px;margin-left: 50px;margin-top: 75px;transform: rotate(2deg)"></img>-->
                                         </div>
                                         <div class="space" style="height: 150%"></div>
-                                        <div class="split-line" style="margin-top: 30%;"></div>
+                                        <div class="split-line" style="margin-top: 33%;"></div>
                                         <div class="space" style="height: 115%"></div>
 					<div class="text-1">
 						<p class="p-1">四年级</p>
+						<p class="p-2" style="margin-right: 15%">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp从四年级开始，我的小学生活变得更为丰富多彩了。我先后加入了吉他社团、陶艺兴趣班。虽然课余时间少了一些，但是这些班级使我的小学生活变得更丰富、多彩！</p>
 					</div>
                                 </div>
                         </div>
-			<div style="width: 100%;height: 250%;margin-top: 10%;"></div>
+			<div style="width: 100%;height: 250%;margin-top: 4%;"></div>
                         <div class="chapter">
                                 <div class="chapter-title">
                                         <div class="split-line"></div>
@@ -384,9 +238,13 @@
                                         <div class="space" style="height: 150%"></div>
                                         <div class="split-line" style="margin-top: 10%;"></div>
                                         <div class="space" style="height: 115%"></div>
+                                        <div class="text-1">
+                                                <p class="p-1">五年级</p>
+						<p class="p-2" style="margin-right: 15%">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp五年级，是我小学生活中非常重要的一段时间。在这段时间里，我加入了创客社团，并在2019年的创客比赛中取得了第一名的好成绩！这是我第一次在大型比赛中取得成绩，我十分开心、激动！</p>
+                                        </div>
                                 </div>
                         </div>
-			<div style="width: 100%;height: 250%;"></div>
+			<div style="width: 100%;height: 250%;margin-top: 5%"></div>
                         <div class="chapter">
                                 <div class="chapter-title">
                                         <div class="split-line"></div>
@@ -406,7 +264,7 @@
                                         <div class="chapter-first-text">
                                                 <sapn class="chapter-title4">全家福<span>
                                         </div>
-                                        <img src="/lsk/doc/lianhuanhui_6.jpg" class="chapter-first-image" style="width: 40%;margin-left: 28%;"></img>
+                                        <img src="/lsk/doc/img_3666.jpg" class="chapter-first-image" style="width: 40%;margin-left: 28%;"></img>
                                         <div class="space" style="height: 15px"></div>
                                         <div class="split-line"></div>
                                         <div class="space" stylAe="height: 15px"></div>
@@ -415,32 +273,50 @@
                                         </div>
                                         <div class="space" style="height: 100px"></div>
                                         <div class="photos-container">
-                                                <img src="/lsk/doc/img_3667.jpg" class="photo" style="height: 300px;width: 400px;margin-left: 5%;float: left; transform: rotate(-9deg)"></img>
-                                                <img src="/lsk/doc/img_3668.jpg" class="photo" style="height: 250px;width: 350px;margin-left: 100px;margin-top: 115px;transform: rotate(15deg);float: left;"></img>
-                                                <img src="/lsk/doc/img_3670.jpg" class="photo" style="height: 200px;width: 300px;margin-left: 50px;margin-top: 75px;transform: rotate(2deg)"></img>
+                                                <img src="/lsk/doc/junxun2.jpg" class="photo" style="height: 300px;width: 400px;margin-left: 15%;float: left; transform: rotate(-9deg)"></img>
+                                                <img src="/lsk/doc/huaxue.jpg" class="photo" style="height: 250px;width: 350px;margin-left: 100px;margin-top: 0px;transform: rotate(15deg);float: left;"></img>
+                                                <!--<img src="/lsk/doc/img_3670.jpg" class="photo" style="height: 200px;width: 300px;margin-left: 50px;margin-top: 75px;transform: rotate(2deg)"></img>-->
                                         </div>
-                                        <div class="space" style="height: 150%"></div>
+                                        <div class="space" style="height: 150%;margin-top: 30%;"></div>
                                         <div class="split-line" style="margin-top: 10%;"></div>
                                         <div class="space" style="height: 115%"></div>
+					<div class="text-1">
+						<p class="p-1">六年级</p>
+						<p class="p-2" style="margin-right: 20%">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2020年，新型冠状病毒来袭，我们只好在家里通过互联网进行学习。虽然我们无法看到老师，但是我们依然可以享受学习的快乐。希望这次的疫情能早点过去，让我们在学校能够见面……</p>
+
+					</div>
                                 </div>
                         </div>
+			<div class="split-line" style="margin-top: 5%;"></div>
 			<div class="end">
-				<p></p><br>
-				<p></p><br>
-				<p></p><br>
-				<p></p><br>	
-				<p></p><br>
-				<p></p><br>
+				<div class="chapter-first-text" style="margin-top: 3%">
+					<span class="chapter-title4">结束语</span>
+				</div>
+				<div class="end-text">
+					<p class="p-2 p-4" style="margin-top: 5%;">羲和驱白日，疾急不可待，精彩纷呈的小学生活已然消逝。</p>
+					<p class="p-2 p-4">当毕业的钟声响起，我们满怀对小学学习、生活的眷恋，</p>
+					<p class="p-2 p-4">当离别的脚步踏过，</p>
+					<p class="p-2 p-4">我们充满对同学、老师的不舍。</p>
+					
+					
+					<p class="p-2 p-4">但我们不忘这个大家庭里的温馨种种，</p>
+					<p class="p-2 p-4">我们将铭记昔日同窗之情、师生情谊之深厚。</p>
+					<p class="p-2 p-4">然而，</p>
+					<p class="p-2 p-4">人有悲欢离合，</p>
+					<p class="p-2 p-4">月有阴晴圆缺。</p>
+					<p class="p-2 p-4" style="margin-bottom: 20px;">今日之别，只为明日欢聚！</p>
+				</div>
 			</div>			
 
-			<button class="top" onclick="javascript:toTop()" style="display: none;">
+			<button class="top" onclick="javascript:toTop()">
 	                </button>
-			<div style="width: 100%;height: 400%;"></div>
+			<div style="width: 100%;height: 400%;margin-top: 10%"></div>
 
          	 </div>
 	         <footer>
 	 			<span class="button stop-bgm">关闭音乐</span>
 				<span class="button play-bgm">手动播放</span>
+				<span style="margin-left: 80%"> Platform: GitHub</span>
 		 </footer>
      </body>
 </html>	
