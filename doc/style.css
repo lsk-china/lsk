@@ -1,7 +1,8 @@
-body{
+		body{
                         margin: 0px;
                         background-color: rgba(102,204,255,0.35);
                         //background-color: #E6E6E6;
+			width: 1366px;
                  }
                  header{
                         padding-top: 10px;
